@@ -3,8 +3,14 @@
     <style name="Base.Theme.Navigations" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/grey</item>
-        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorPrimaryVariant">@color/kobai</item>
         <item name="android:statusBarColor">@color/black</item>
+
+        <style name="Base.Theme.Navigations.NoActionBar" tools:ignore="DuplicateDefinition">
+            <item name="windowActionBar">false</item>
+            <item mame="windowsNoTitle">true</item>
+        </style>
+
     </style>
 
     <style name="Theme.Navigations" parent="Base.Theme.Navigations" />

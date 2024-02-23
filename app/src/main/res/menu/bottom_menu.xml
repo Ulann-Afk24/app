@@ -13,13 +13,13 @@
     <item
         android:title="Accessories"
         android:icon="@drawable/motorsports_24"
-        android:id="@+id/helmet"/>
+        android:id="@+id/bottom_helmet"/>
 
 
     <item
-        android:id="@+id/bottom_order"
-        android:title="Orders"
-        android:icon="@drawable/add_shopping_cart_24"/>
+        android:id="@+id/bottom_order_history"
+        android:title="History"
+        android:icon="@drawable/history_24"/>
 
     <item
         android:id="@+id/bottom_cart"

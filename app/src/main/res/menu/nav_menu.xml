@@ -3,20 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn = "navigation_view">
 
-    <group
+    <group android:id="@+id/it1"
         android:checkableBehavior="single">
 
 
+
         <item
-            android:id="@+id/nav_prime"
-            android:icon="@drawable/arrow_outward_24"
-            android:title="Prime"/>
+            android:id="@+id/nav_helmet"
+            android:icon="@drawable/motorsports_24"
+            android:title="ACCESSORIES"/>
 
 
         <item
             android:id="@+id/nav_motor"
             android:icon="@drawable/car_rental_24"
             android:title="MOTORCYCLES"/>
+
+
     </group>
 
 </menu>
