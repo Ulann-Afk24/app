@@ -10,6 +10,9 @@
     tools:openDrawer="start"
     tools:context=".MainActivity">
 
+    <include android:id="@+id/appbarMain"
+        layout="@layout/app_bar_main"/>
+
 
 
 
@@ -17,22 +20,6 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-
-
-        <com.google.android.material.bottomappbar.BottomAppBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/bottomAppBar"
-            android:layout_gravity="bottom"
-           android:background="@color/kobai"
-            app:fabCradleMargin="10dp"
-            app:fabCradleRoundedCornerRadius="50dp">
-
-
-
-        </com.google.android.material.bottomappbar.BottomAppBar>
-
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 

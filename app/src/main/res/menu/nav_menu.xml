@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn = "navigation_view">
+    tools:showIn="navigation_view">
 
     <group android:id="@+id/it1"
         android:checkableBehavior="single">
 
-
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home_icon"/>
 
         <item
-            android:id="@+id/nav_helmet"
-            android:icon="@drawable/motorsports_24"
-            android:title="ACCESSORIES"/>
-
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/person_register"/>
 
         <item
-            android:id="@+id/nav_motor"
-            android:icon="@drawable/car_rental_24"
-            android:title="MOTORCYCLES"/>
+            android:id="@+id/nav_accessories"
+            android:title="Accessories"
+            android:icon="@drawable/helmet_accessories_24"/>
 
+        <item
+            android:id="@+id/nav_motorcyles"
+            android:title="Motorcyles"
+            android:icon="@drawable/car_rental_24"/>
 
     </group>
+
+
+    <item
+        android:id="@+id/nav_cart"
+        android:title="Cart"
+        android:icon="@drawable/shopping_cart_24" />
+
+    <item
+        android:id="@+id/nav_History"
+        android:title="History"
+        android:icon="@drawable/history_24" />
 
 </menu>
