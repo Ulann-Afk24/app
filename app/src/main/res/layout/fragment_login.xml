@@ -6,43 +6,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sign_inn"
-    tools:context=".LohinActivity">
+    tools:context=".nav_fragments.LoginFragment">
 
 
     <EditText
-        android:id="@+id/textEmail"
+        android:id="@+id/textEmailAddress"
         android:layout_width="338dp"
         android:layout_height="60dp"
+        android:autofillHints="Email"
         android:background="@drawable/input_backround_btn"
         android:drawableStart="@drawable/email_register"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="E-mail Address"
         android:inputType="text"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
         android:paddingBottom="10dp"
+        android:textColor="#ECE7E7"
         android:textColorHint="#FFFFFF"
-        android:autofillHints="Email"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/inputUsername"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordLogin"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/inputUsername"
-        app:layout_constraintTop_toBottomOf="@+id/inputUsername"
+        app:layout_constraintStart_toStartOf="@+id/PasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordLogin"
         app:layout_constraintVertical_bias="0.055" />
 
     <EditText
-        android:id="@+id/inputUsername"
+        android:id="@+id/PasswordLogin"
         android:layout_width="341dp"
         android:layout_height="49dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:autofillHints="username"
         android:background="@drawable/input_backround_btn"
         android:drawableStart="@drawable/person_register"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Password"
         android:inputType="text"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
@@ -50,7 +52,6 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="#FFF8F8"
-        android:autofillHints="username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -77,14 +78,14 @@
         app:layout_constraintVertical_bias="0.106" />
 
     <Button
-        android:id="@+id/button_login"
+        android:id="@+id/buttonLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Button"
+        android:text="Login"
         app:layout_constraintEnd_toEndOf="@+id/forgotpassword"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textEmail"
+        app:layout_constraintStart_toStartOf="@+id/textEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/forgotpassword" />
 
     <TextView
@@ -95,8 +96,8 @@
         android:text="Forgot Password?"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/textEmail"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+        app:layout_constraintEnd_toEndOf="@+id/textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/textEmailAddress" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -105,10 +106,10 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/button_login"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button_login"
-        app:layout_constraintTop_toBottomOf="@+id/button_login">
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin">
 
         <TextView
             android:layout_width="wrap_content"

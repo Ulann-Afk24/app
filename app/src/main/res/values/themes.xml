@@ -5,12 +5,8 @@
         <item name="colorPrimary">@color/grey</item>
         <item name="colorPrimaryVariant">@color/kobai</item>
         <item name="android:statusBarColor">@color/black</item>
-
-        <style name="Base.Theme.Navigations.NoActionBar" tools:ignore="DuplicateDefinition">
-            <item name="windowActionBar">false</item>
-            <item mame="windowsNoTitle">true</item>
-        </style>
-
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="Theme.Navigations" parent="Base.Theme.Navigations" />

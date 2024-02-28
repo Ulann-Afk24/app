@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigations.nav_fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.navigations.nav_fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_accessoriesFragment"
+            app:destination="@id/accessoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accessoriesFragment"
+        android:name="com.example.navigations.nav_fragments.AccessoriesFragment"
+        android:label="fragment_accessories"
+        tools:layout="@layout/fragment_accessories" >
+        <action
+            android:id="@+id/action_accessoriesFragment_to_motorcyleFragment"
+            app:destination="@id/motorcyleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/motorcyleFragment"
+        android:name="com.example.navigations.nav_fragments.MotorcyleFragment"
+        android:label="fragment_motorcyle"
+        tools:layout="@layout/fragment_motorcyle" >
+        <action
+            android:id="@+id/action_motorcyleFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.navigations.nav_fragments.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.navigations.nav_fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.navigations.nav_fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
