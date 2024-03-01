@@ -26,6 +26,7 @@
         android:paddingBottom="10dp"
         android:textColor="#ECE7E7"
         android:textColorHint="#FFFFFF"
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@+id/PasswordLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
@@ -38,6 +39,19 @@
         android:id="@+id/PasswordLogin"
         android:layout_width="338dp"
         android:layout_height="60dp"
+=======
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordLogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/PasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordLogin"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <EditText
+        android:id="@+id/PasswordLogin"
+        android:layout_width="341dp"
+        android:layout_height="49dp"
+>>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:autofillHints="username"
@@ -55,10 +69,17 @@
         android:textColorHint="#FFF8F8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TextFields" />
+=======
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login"
+        app:layout_constraintVertical_bias="0.146" />
+>>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
 
     <TextView
         android:id="@+id/Login"
@@ -73,6 +94,7 @@
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.161"
@@ -92,11 +114,29 @@
         app:layout_constraintTop_toBottomOf="@+id/PasswordLogin"
         app:layout_constraintVertical_bias="0.153"
         tools:ignore="HardcodedText" />
+=======
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/forgotpassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/forgotpassword" />
+>>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
 
     <TextView
         android:id="@+id/forgotpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="8dp"
         android:text="Forgot Password?"
         android:textColor="#FFFFFF"
@@ -110,20 +150,40 @@
     <LinearLayout
         android:layout_width="340dp"
         android:layout_height="38dp"
+=======
+        android:layout_marginTop="16dp"
+        android:text="Forgot Password?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/textEmailAddress" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+>>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"
+<<<<<<< HEAD
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/buttonLogin"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
         app:layout_constraintVertical_bias="0.01">
+=======
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin">
+>>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:text="Don't have an Account?"
             android:textColor="@color/white"
             android:textSize="16sp"
@@ -137,6 +197,17 @@
             android:textColor="@color/kobai"
             android:textSize="20sp"
             tools:ignore="HardcodedText" />
+=======
+            android:text="Dont have an Account?"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:textColor="@color/kobai"/>
+>>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
 
     </LinearLayout>
 

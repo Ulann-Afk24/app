@@ -3,5 +3,8 @@
     <string name="open_drawer">Open Navigation Drawer</string>
     <string name="close_drawer">Close Navigation Drawer</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+<<<<<<< HEAD
     <string name="navigation_drawer_toggle">Toggle Navigation Drawer</string>
+=======
+>>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
 </resources>

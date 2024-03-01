@@ -13,6 +13,7 @@
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+<<<<<<< HEAD
         <action
             android:id="@+id/action_homeFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
@@ -28,6 +29,8 @@
         <action
             android:id="@+id/action_homeFragment_to_historyFragment"
             app:destination="@id/historyFragment" />
+=======
+>>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -78,6 +81,7 @@
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+<<<<<<< HEAD
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
@@ -93,5 +97,7 @@
         <action
             android:id="@+id/action_registerFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+=======
+>>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
     </fragment>
 </navigation>
