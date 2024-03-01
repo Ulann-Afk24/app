@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#A9A9A9</color>
+    <color name="kobai">#db5a6b</color>
+    <color name="Green">#2B9C0B</color>
+    <color name="skyblue">#119ADA</color>
+    <color name="ashgrey">#B2BEB5</color>
+    <color name="pewter">#899499</color>
+    <color name="steel">C0C0C0</color>
+</resources>

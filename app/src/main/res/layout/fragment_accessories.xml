@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pewter">
+
+    <!-- Navigation bar -->
+    <RelativeLayout
+        android:id="@+id/navbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <!-- ImageView in the navigation bar -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="48dp"
+            android:layout_height="41dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/gearhead" />
+
+        <!-- TextView in the navigation bar -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCESSORIES"
+            android:textColor="@color/kobai"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/logoImageView"
+            android:layout_marginStart="8dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/serviceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEARABLES"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/navbarLayout"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/steel"/>
+
+    <!-- ScrollView for product cards -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/serviceTextView"
+        android:layout_above="@+id/footerLayout"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:background="@color/grey">
+
+                    <ImageView
+                        android:id="@+id/productImageView"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        android:src="@drawable/evo_ultraviolet" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView"
+                        android:layout_width="129dp"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView"
+                        android:text="Evo Ultra Violet"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_toEndOf="@id/productImageView"
+                        android:text="The EVO has a shell thickness of 3.01 MM and is made of KEVLAR. the MSA Gallet is 1.56 MM thick. The difference in the thickness is a stronger shell, less flex cracks and better attenuation. The first this that all EVO owners notice is that the EVO is much quieter than any other helmet"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button1"
+                        android:layout_marginStart="-95dp"
+                        android:layout_marginTop="-54dp"
+                        android:layout_toEndOf="@id/productImageView"
+                        android:text="₱3,600.00"
+                        android:textColor="@color/Green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/productDescriptionTextView"
+                        android:layout_marginStart="-137dp"
+                        android:layout_marginTop="-37dp"
+                        android:layout_toEndOf="@id/productImageView"
+                        android:backgroundTint="@color/skyblue"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@color/steel">
+
+                    <ImageView
+                        android:id="@+id/productImageView2"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        android:src="@drawable/spyder" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView2"
+                        android:layout_width="129dp"
+                        android:layout_height="61dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView2"
+                        android:text="Spyder Black and White"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView2"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView2"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="-16dp"
+                        android:layout_toEndOf="@id/productImageView2"
+                        android:text="Spyder is an open-source cross-platform integrated development environment (IDE) for scientific programming in the Python language."/>
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button2"
+                        android:layout_marginStart="-105dp"
+                        android:layout_marginTop="-57dp"
+                        android:layout_toEndOf="@id/productImageView2"
+                        android:text="₱2,800.00"
+                        android:textColor="@color/Green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/productDescriptionTextView2"
+                        android:layout_marginStart="-140dp"
+                        android:layout_marginTop="-49dp"
+                        android:layout_toEndOf="@id/productImageView2"
+                        android:backgroundTint="@color/skyblue"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@color/grey">
+
+                    <ImageView
+                        android:id="@+id/productImageView3"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        android:src="@drawable/probikerpants" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView3"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView3"
+                        android:text="Pro Biker Pants"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView3"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView3"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView3"
+                        android:text="Pro Biker Motorcycle pants are critical for protecting your hips, legs, and knees from injuries that can occur during an accident. While some riders may choose to wear regular clothing, it is essential to prioritize durable, weatherproof, and well-ventilated motorcycle pants to keep you safe."
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button3"
+                        android:layout_marginStart="-97dp"
+                        android:layout_marginTop="-56dp"
+                        android:layout_toEndOf="@id/productImageView3"
+                        android:text=" ₱7,750.00"
+                        android:textColor="@color/Green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/productDescriptionTextView3"
+                        android:layout_marginStart="-138dp"
+                        android:layout_marginTop="-27dp"
+                        android:layout_toEndOf="@id/productImageView3"
+                        android:backgroundTint="@color/skyblue"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@color/steel">
+
+                    <ImageView
+                        android:id="@+id/productImageView4"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        android:src="@drawable/cordurapants" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView4"
+                        android:text="Adventure Armored Cordura Pants"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView4"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView4"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="-14dp"
+                        android:layout_toEndOf="@id/productImageView4"
+                        android:text="These biker trousers feature removable armors for knee protection. The certified protectors and abrasion-resistant Cordura fabric protect you in case of accidents and falls. Velcro waist straps allow you to adjust your waist size. The button closure and zipper fly are made waterproof with a Velcro flap.."
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button4"
+                        android:layout_marginStart="-104dp"
+                        android:layout_marginTop="-56dp"
+                        android:layout_toEndOf="@id/productImageView4"
+                        android:text="₱14,666.00"
+                        android:textColor="@color/Green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/productDescriptionTextView4"
+                        android:layout_marginStart="-138dp"
+                        android:layout_marginTop="-28dp"
+                        android:layout_toEndOf="@id/productImageView4"
+                        android:backgroundTint="@color/skyblue"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/productImageView5"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        android:src="@drawable/gloveskemimoto" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView5"
+                        android:text="Gloves Kemimoto"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView5"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/productImageView5"
+                        android:text="【Breathable And Dry Design】There are 4 inclined rubber ventilation holes at the finger joints that can quickly dissipate heat and be waterproof, keep your hands cool all the time, and wide suitable for outdoor sports cycling riding motorcycle motorcross racing dirt bike ATV UTV.【Breathable and Dry Design】There are 4 inclined rubber ventilation holes at the finger joints that can quickly dissipate heat and be waterproof."
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button5"
+                        android:layout_marginStart="-104dp"
+                        android:layout_marginTop="-56dp"
+                        android:layout_toEndOf="@id/productImageView5"
+                        android:text=" ₱4,600.00"
+                        android:textColor="@color/Green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/productDescriptionTextView5"
+                        android:layout_marginStart="-138dp"
+                        android:layout_marginTop="-66dp"
+                        android:layout_toEndOf="@id/productImageView5"
+                        android:backgroundTint="@color/skyblue"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@color/steel">
+
+                    <ImageView
+                        android:id="@+id/productImageView6"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        android:src="@drawable/gloves_grc01" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView6"
+                        android:text="Gloves GRC01"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView6"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView6"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toEndOf="@id/productImageView6"
+                        android:text="Look for gloves specifically designed for summer or warm-weather motorcycle riding. These will be made of breathable, moisture-wicking materials like mesh, textile, leather, or perforated leather. They should have padded palms for comfort control and reinforced stitching in high-wear areas."
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button6"
+                        android:layout_marginStart="-104dp"
+                        android:layout_marginTop="-56dp"
+                        android:layout_toEndOf="@id/productImageView6"
+                        android:text=" ₱3,990.00"
+                        android:textColor="@color/Green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/productDescriptionTextView6"
+                        android:layout_marginStart="-138dp"
+                        android:layout_marginTop="-48dp"
+                        android:layout_toEndOf="@id/productImageView6"
+                        android:backgroundTint="@color/skyblue"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@color/grey">
+
+                    <ImageView
+                        android:id="@+id/productImageView7"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        android:src="@drawable/formaadventureboots" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView7"
+                        android:text="Forma Adventure Boots"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView7"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView7"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toEndOf="@id/productImageView7"
+                        android:text="Forma Adventures are light, waterproof, easy to walk in, and extremely comfortable. They have reinforcements support at the ankle, and extra height over other ADV boots, at 13.25 inches. Best of all, they have a Keen-like nice, wide fit. Adventures have plastic toe protectors on sides."
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button7"
+                        android:layout_marginStart="-104dp"
+                        android:layout_marginTop="-56dp"
+                        android:layout_toEndOf="@id/productImageView7"
+                        android:text="₱12,990.00"
+                        android:textColor="@color/Green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/productDescriptionTextView7"
+                        android:layout_marginStart="-138dp"
+                        android:layout_marginTop="-48dp"
+                        android:layout_toEndOf="@id/productImageView7"
+                        android:backgroundTint="@color/skyblue"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/productImageView16"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        android:src="@drawable/probikerboot" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView16"
+                        android:text="Pro Biker Boots"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView8"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView8"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toEndOf="@id/productImageView16"
+                        android:text="Pro biker boots features full grain leather upper construction for protection and durability. TPU molded guard shields armour at ankle, heel, shin to protect from impacts. Biker boots also have ankle protection and shift plate. Durable microfiber and injected."
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button8"
+                        android:layout_marginStart="-104dp"
+                        android:layout_marginTop="-56dp"
+                        android:layout_toEndOf="@id/productImageView16"
+                        android:text="₱1,700.00"
+                        android:textColor="@color/Green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/productDescriptionTextView8"
+                        android:layout_marginStart="-138dp"
+                        android:layout_marginTop="-48dp"
+                        android:layout_toEndOf="@id/productImageView16"
+                        android:backgroundTint="@color/skyblue"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@color/grey">
+
+                    <ImageView
+                        android:id="@+id/productImageView17"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        android:src="@drawable/jacketairmesh" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView17"
+                        android:text="Jacket Air Mesh Motorcycle"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView9"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView9"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toEndOf="@id/productImageView17"
+                        android:text="Your jacket should seal out cold winds at your wrists, waist and neck. Make sure it has a collar with an adjustable closure that doesn't feel too tight over your scarf or when you're riding at speed. Also, look for a motorcycle riding jacket with reinforced padding or armor on the elbows and shoulders."
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button9"
+                        android:layout_marginStart="-104dp"
+                        android:layout_marginTop="-56dp"
+                        android:layout_toEndOf="@id/productImageView17"
+                        android:text="₱4,390.00"
+                        android:textColor="@color/Green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/productDescriptionTextView9"
+                        android:layout_marginStart="-138dp"
+                        android:layout_marginTop="-48dp"
+                        android:layout_toEndOf="@id/productImageView17"
+                        android:backgroundTint="@color/skyblue"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/productImageView18"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        android:src="@drawable/jacketborleni" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView18"
+                        android:text="Jacket Borleni Motorcycle"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView10"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView10"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toEndOf="@id/productImageView18"
+                        android:text="Your jacket should seal out cold winds at your wrists, waist and neck. Make sure it has a collar with an adjustable closure that doesn't feel too tight over your scarf or when you're riding at speed. Also, look for a motorcycle riding jacket with reinforced padding or armor on the elbows and shoulders."
+                        android:textSize="11sp" />
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/productDescriptionTextView10"
+                        android:layout_marginStart="-138dp"
+                        android:layout_marginTop="-48dp"
+                        android:layout_toEndOf="@id/productImageView18"
+                        android:backgroundTint="@color/skyblue"
+                        android:text="Add to Cart" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button10"
+                        android:layout_marginStart="-104dp"
+                        android:layout_marginTop="-56dp"
+                        android:layout_toEndOf="@id/productImageView18"
+                        android:text="₱₱5,390.00"
+                        android:textColor="@color/Green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey">
+
+        <!-- Home Button -->
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@android:color/white"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/skyblue"/>
+
+
+
+        <!-- Account Button -->
+        <Button
+            android:id="@+id/accountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/skyblue"/>
+
+    </RelativeLayout>
+</RelativeLayout>
