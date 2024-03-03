@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/appbarMain"
+    android:id="@+id/appbarmain"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -15,27 +14,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-=======
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/appbarMain">
 
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/appbarMain"/>
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
->>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/grey"
-<<<<<<< HEAD
             android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
             <androidx.appcompat.widget.AppCompatImageButton
@@ -50,7 +41,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- Toggle button for navigation drawer -->
+
 
     <FrameLayout
         android:id="@+id/nav_fragment"
@@ -63,29 +54,3 @@
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ahhhhhhhhhhhhhh"
-            android:textColor="@color/black"
-            android:textSize="45sp"
-            android:textStyle="italic"/>
-
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-
-    <FrameLayout
-        android:id="@+id/nav_fragment"
-        android:layout_centerHorizontal="true"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/appBarLayout">
-
-    </FrameLayout>
-
-</RelativeLayout>
->>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7

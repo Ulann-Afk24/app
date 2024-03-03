@@ -4,12 +4,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#A9A9A9</color>
     <color name="kobai">#db5a6b</color>
-<<<<<<< HEAD
     <color name="Green">#2B9C0B</color>
     <color name="skyblue">#119ADA</color>
     <color name="ashgrey">#B2BEB5</color>
     <color name="pewter">#899499</color>
     <color name="steel">C0C0C0</color>
-=======
->>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
+
 </resources>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E8E4C9"
-    tools:context=".Profile_Fragment">
+    tools:context=".nav_fragments.ProfileFragment">
 
     <TextView
         android:id="@+id/profile_title"
@@ -70,20 +69,5 @@
         app:layout_constraintVertical_bias="0.467" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".nav_fragments.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="sino ka"
-        android:textStyle="bold"
-        android:textSize="40sp"
-        android:gravity="center" />
-</FrameLayout>
->>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
+

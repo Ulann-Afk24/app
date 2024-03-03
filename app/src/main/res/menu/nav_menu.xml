@@ -39,12 +39,10 @@
         android:title="Orders"
         android:icon="@drawable/history_24" />
 
-<<<<<<< HEAD
+
     <item
         android:id="@+id/nav_Logout"
         android:title="Logout"
         android:icon="@drawable/baseline_logout_24" />
 
-=======
->>>>>>> 5b2c455c0fb99259b607743cfe0b293027c20ba7
 </menu>
